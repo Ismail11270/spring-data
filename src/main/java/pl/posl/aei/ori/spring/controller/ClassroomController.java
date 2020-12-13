@@ -10,5 +10,5 @@ import pl.posl.aei.ori.spring.repository.ClassroomRepository;
 public class ClassroomController {
     @Autowired
     private ClassroomRepository cr;
-    
+
 }
