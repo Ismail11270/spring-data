@@ -10,6 +10,7 @@ import java.util.List;
 
 @Repository
 public interface ScheduleRepository extends JpaRepository<Schedule, ScheduleId> {
-//    @Query("SELECT s FROM Schedule s WHERE s.subject=(:id)")
     List<Schedule> findSchedulesBySubjectId( @RequestParam int subjectId );
+
+
 }
