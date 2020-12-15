@@ -1,4 +1,4 @@
-package pl.posl.aei.ori.spring.converter;
+package pl.posl.aei.ori.spring.util.converter;
 
 
 import pl.posl.aei.ori.spring.model.Gender;

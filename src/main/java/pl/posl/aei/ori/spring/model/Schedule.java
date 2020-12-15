@@ -29,6 +29,7 @@ public class Schedule {
     private Employee employee;
 
     @ManyToOne
+    @MapsId("classRoomId")
     @JoinColumn(name = "ROOM_ID", foreignKey = @ForeignKey(name = "FK_SCHEDULES_ROOM_ID"))
     @Cascade( org.hibernate.annotations.CascadeType.SAVE_UPDATE )
     private ClassRoom classRoom;

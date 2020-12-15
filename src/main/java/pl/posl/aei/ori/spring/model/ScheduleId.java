@@ -15,6 +15,7 @@ import java.util.Objects;
 public class ScheduleId implements Serializable {
     private int subjectId;
     private int employeeId;
+    private int classRoomId;
 
     @Override
     public boolean equals( Object o ) {
@@ -22,12 +23,13 @@ public class ScheduleId implements Serializable {
         if ( o == null || getClass( ) != o.getClass( ) ) return false;
         ScheduleId that = ( ScheduleId ) o;
         return subjectId == that.subjectId &&
-                employeeId == that.employeeId;
+                employeeId == that.employeeId &&
+                classRoomId == that.classRoomId;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash( subjectId, employeeId );
+        return Objects.hash( subjectId, employeeId, classRoomId );
     }
 
     public ScheduleId(){

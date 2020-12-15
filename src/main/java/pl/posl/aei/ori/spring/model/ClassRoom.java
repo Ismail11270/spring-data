@@ -3,7 +3,7 @@ package pl.posl.aei.ori.spring.model;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
-import pl.posl.aei.ori.spring.converter.BooleanConverter;
+import pl.posl.aei.ori.spring.util.converter.BooleanConverter;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -26,5 +26,4 @@ public class ClassRoom implements Serializable {
     @Column(name="SCREEN")
     @Convert(converter = BooleanConverter.class)
     private Boolean screen;
-
 }

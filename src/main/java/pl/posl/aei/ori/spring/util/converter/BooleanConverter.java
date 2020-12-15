@@ -1,4 +1,4 @@
-package pl.posl.aei.ori.spring.converter;
+package pl.posl.aei.ori.spring.util.converter;
 
 import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;

@@ -22,7 +22,7 @@ public class ClassroomController {
     private ClassroomRepository cr;
 
     @GetMapping
-    public Page<ClassRoom> getAll(@RequestParam String sortBy){
+    public Page<ClassRoom> getAll(@RequestParam(required = false, defaultValue = "id") String sortBy){
         Pageable pageable = PageRequest.of(0,1000, Sort.by(sortBy).descending());
         return cr.findAll(pageable);
     }

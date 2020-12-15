@@ -10,7 +10,6 @@ import pl.posl.aei.ori.spring.model.ClassRoom;
 
 import java.util.List;
 
-@Repository
 public interface ClassroomRepository extends JpaRepository<ClassRoom, Integer> {
 
     List<ClassRoom> findClassRoomsByRoomSizeIsAfterAndScreen(@RequestParam int roomSize,

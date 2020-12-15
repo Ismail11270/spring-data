@@ -4,7 +4,7 @@ package pl.posl.aei.ori.spring.model;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.Cascade;
-import pl.posl.aei.ori.spring.converter.GenderConverter;
+import pl.posl.aei.ori.spring.util.converter.GenderConverter;
 
 import javax.persistence.*;
 import java.io.Serializable;
